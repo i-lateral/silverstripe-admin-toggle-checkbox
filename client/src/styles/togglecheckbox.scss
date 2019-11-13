@@ -2,13 +2,9 @@
 .field.checkbox {
     position: relative;
 
-    input {
-        margin-left: 0.25rem;
-    }
-
     .form-check {
         margin-left: 1.585rem !important;
-        
+
         label.form-check-label {
             max-width: 100% !important;
             display: block;
@@ -48,17 +44,19 @@
         border-radius: 50%;
     }
 
-    input:checked + .slider {
-        background-color: #005a93;;
-    }
+    input {
+        margin-left: 0.25rem;
 
-    input:focus + .slider {
-        box-shadow: 0 0 1px #004e7f;
-    }
-      
-    input:checked + .slider:before {
-        -webkit-transform: translateX(-28px);
-        -ms-transform: translateX(-28px);
-        transform: translateX(-28px);
+        &:checked + .slider {
+            background-color: #005a93;;
+        }
+        &:focus + .slider {
+            box-shadow: 0 0 1px #004e7f;
+        }
+        &:checked + .slider:before {
+            -webkit-transform: translateX(-28px);
+            -ms-transform: translateX(-28px);
+            transform: translateX(-28px);
+        }
     }
 }
