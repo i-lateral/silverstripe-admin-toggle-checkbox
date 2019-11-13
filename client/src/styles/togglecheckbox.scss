@@ -1,0 +1,64 @@
+/** Restyle checkboxes as toggle switches */
+.field.checkbox {
+    position: relative;
+
+    input {
+        margin-left: 0.25rem;
+    }
+
+    .form-check {
+        margin-left: 1.585rem !important;
+        
+        label.form-check-label {
+            max-width: 100% !important;
+            display: block;
+        }
+    }
+
+    .title {
+        margin-left: 65px;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        width: 52px;
+        height: 24px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 34px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        top: 2px;
+        left: 30px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 50%;
+    }
+
+    input:checked + .slider {
+        background-color: #005a93;;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #004e7f;
+    }
+      
+    input:checked + .slider:before {
+        -webkit-transform: translateX(-28px);
+        -ms-transform: translateX(-28px);
+        transform: translateX(-28px);
+    }
+}

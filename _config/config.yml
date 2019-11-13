@@ -1,0 +1,6 @@
+---
+Name: togglecheckboxconfig
+---
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_css:
+    - i-lateral/silverstripe-admin-toggle-checkbox:client/dist/styles/main.css
