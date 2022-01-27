@@ -25,9 +25,22 @@ const PATHS = {
 
 const config = [
   {
+    name: 'js',
+    entry: {
+      togglecheckbox: `${PATHS.SRC}/javascript/togglecheckbox.js`,
+    },
+    output: {
+      path: PATHS.DIST,
+      filename: 'js/[name].js'
+    },
+    devtool: (ENV !== 'production') ? 'source-map' : '',
+    module: moduleCSS(ENV, PATHS),
+    plugins: pluginCSS(ENV, PATHS),
+  },
+  {
     name: 'css',
     entry: {
-      main: `${PATHS.SRC}/styles/togglecheckbox.scss`,
+      togglecheckbox: `${PATHS.SRC}/styles/togglecheckbox.scss`,
     },
     output: {
       path: PATHS.DIST,

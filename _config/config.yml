@@ -3,4 +3,6 @@ Name: togglecheckboxconfig
 ---
 SilverStripe\Admin\LeftAndMain:
   extra_requirements_css:
-    - i-lateral/silverstripe-admin-toggle-checkbox:client/dist/styles/main.css
+    - i-lateral/silverstripe-admin-toggle-checkbox:client/dist/styles/togglecheckbox.css
+  extra_requirements_javascript:
+    - i-lateral/silverstripe-admin-toggle-checkbox:client/dist/js/togglecheckbox.js
